@@ -6,7 +6,7 @@ body, html{
     margin: 0;
     font-family: "Source Code Pro", monospace;
     scroll-behavior: smooth;
-    background-color: #EED0B2;
+    background-color: #E9C8CE;
 }
 
 .navbar {
@@ -15,7 +15,7 @@ body, html{
     align-items: center;
     padding: 10px 20px;
     border-bottom: 1px solid #333; 
-    background-color: #D9B896;
+    background-color: #DC98BD;
 }
 
 .logo {
@@ -56,13 +56,14 @@ img{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin: 65px;
 }
 
 #presentation {
     flex: 1;
     padding: 20px;
     max-width: 600px;
-    background-color: #F2DABF;
+    background-color: #DC98BD;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
@@ -81,11 +82,10 @@ img{
 
 #presentationprojet img {
     flex: 1;
-    height: 325px;
-    width: 325px;
+    height: 290px;
+    width: 290px;
     padding: 0;
-    margin: 10px;
-    border-radius: 20%;
+    border-radius: 5%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -96,6 +96,7 @@ img{
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 10px;
+    margin-top: 90px;
     font-family: "Tilt Neon", sans-serif;
 }
 
@@ -106,11 +107,12 @@ img{
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    margin: 20px;
 }
 
 .box-projet {
     width: 250px;
-    background-color: #F2DABF;
+    background-color: #DC98BD;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     overflow: hidden;
@@ -133,17 +135,18 @@ img{
 
 .box-projet h4 {
     font-size: 1.2em;
-    margin: 10px 0;
+    margin: 5px 0;
     color: #333333;
 }
 
 .box-projet p {
     font-size: 1em;
-    color: #666666;
+    color: #333;
+    margin-top: 0;
 }
 
 footer {
-    background-color: #D9B896;
+    background-color: #DC98BD;
     padding: 40px 20px;
     margin-top: 40px;
     display: flex;
@@ -189,9 +192,11 @@ footer {
     transition: color 0.3s ease;
 }
 
+
 #socialmedia ul li a:hover {
-    color: #333;
-}
+        color: #0B032F;
+    }
+
 
 .fleche{
     width: 50px;
@@ -207,4 +212,113 @@ footer {
 .fleche:hover{
     filter: drop-shadow(0px 0px 10px grey);
     scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    #presentationprojet {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    #presentationprojet img {
+        width: 355px;
+        height: 365px;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #presentation {
+        max-width: 100%;
+    }
+
+    #suiviprojet {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .box-projet {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #socialmedia ul {
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #socialmedia h2 {
+        font-size: 1.8rem;
+    }
+
+    #socialmedia p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    #suivititle {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .box-projet h4 {
+        font-size: 1rem;
+    }
+
+    .box-projet p {
+        font-size: 0.9rem;
+    }
+
+    .fleche {
+        width: 40px;
+        height: 40px;
+    }
 }
