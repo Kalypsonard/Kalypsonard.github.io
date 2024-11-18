@@ -199,11 +199,6 @@ img{
     line-height: 1.5;
 }
 
-.box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
 #realisation {
     padding: 40px 20px;
     text-align: center;
@@ -258,12 +253,6 @@ img{
     line-height: 1.5;
     margin-top: 0px;
 }
-
-.real:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
 
 #temoignage {
     text-align: center;
@@ -340,11 +329,6 @@ img{
     margin: 0;
 }
 
-.client:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
 footer {
     background-color: #DC98BD;
     padding: 40px 20px;
@@ -412,6 +396,67 @@ footer {
     filter: drop-shadow(0px 0px 10px grey);
     scroll-behavior: smooth;
 }
+
+.box {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#presentation {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 2.1s ease-out, transform 2.1s ease-out;
+}
+
+#presentation.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.real {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.real.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.real:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.client {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.client.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.client:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
 
 @media (max-width: 768px) {
     .navbar {
